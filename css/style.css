@@ -1,0 +1,54 @@
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.container{
+    display: block;
+    width: 100px;
+    height: 200px;
+    background: red ;
+    border: solid 2px ;
+}
+.fade-in,.fade-out{
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+}
+.fade-in{
+    animation-name: fadeIn;
+}
+.fade-out{
+    animation-name: fadeOut;
+}
+.btn{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 200px;
+    background: cadetblue;
+    border: solid 1px lightseagreen;
+    
+}
+.btn:hover{
+    background: deepskyblue;
+}
