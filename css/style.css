@@ -52,3 +52,25 @@
 .btn:hover{
     background: deepskyblue;
 }
+@keyframes logo-breathe {
+    from {
+        height: 100px;
+    width: 200px;
+        opacity: .2;
+        filter: alpha(opacity=20)
+    }
+    to {
+        height: 150px;
+    width: 300px;
+        opacity: 1;
+        filter: alpha(opacity=100)
+    }
+}
+.btn{
+    animation-name: logo-breathe;
+    animation-duration: 1.8s;
+    animation-delay: .2s;
+    animation-timing-function: cubic-bezier(.73, .005, .42, 1.005);
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
