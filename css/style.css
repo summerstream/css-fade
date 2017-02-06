@@ -54,14 +54,12 @@
 }
 @keyframes logo-breathe {
     from {
-        height: 100px;
-    width: 90px;
+        transform: scale(1);
         opacity: .2;
         filter: alpha(opacity=20)
     }
     to {
-        height: 150px;
-    width: 140px;
+        transform: scale(1.5);
         opacity: 1;
         filter: alpha(opacity=100)
     }
@@ -77,7 +75,7 @@
 .heart{
     width: 100px;
     height: 90px;
-
+    margin: 50px;
 }
 .heart:before,
 .heart:after{
